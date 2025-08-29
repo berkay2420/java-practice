@@ -12,7 +12,7 @@ public class PrintF {
 
         double price1 = 9.89;
 
-        System.out.printf("%.1f",price1);
+        System.out.printf("%.1f  \uD83E\uDD9A",price1);
 
     }
 }
