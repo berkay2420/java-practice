@@ -102,15 +102,18 @@ public class SlotMachineMain {
             sameSlots++;
         }
 
+        totalReturn = betAmount * (sameSlots + 1);
 
         if (sameSlots == 0){
             System.out.println("Sorry you have lost this round");
+            return 0;
         }else {
             System.out.printf("Congratulations you have %d same slots\n",sameSlots + 1);
             System.out.printf("You have won: $" + betAmount * sameSlots);
+            return  totalReturn;
         }
-        totalReturn = betAmount * sameSlots;
-        return  totalReturn;
+
+
 
     }
 
