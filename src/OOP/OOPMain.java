@@ -6,13 +6,15 @@ public class OOPMain {
         //and can perform actions (methods). It's a reference data type
 
         //Creating new object with "static factory method"
-        Car newCar = Car.createCar("toyoya","SUV",2020, 90.800);
-        System.out.println(newCar.model);
+        Car newCar = Car.createCar("toyoya","SUV","Blue",2020, 90.800);
+        System.out.println(newCar.getModel());
+        newCar.setColor("Updated Blue");
+        newCar.setPrice(90000);
         newCar.drive();
 
         //Creating new object with direct constructor
-        Car newCar2 = new Car("ford","mustang",2021, 91.800);
-        System.out.println(newCar2.model);
+        Car newCar2 = new Car("ford","mustang","Red", 2021, 91.800);
+        System.out.println(newCar2.getModel());
         newCar2.drive();
 
         Student newStudent = new Student("Bob",20,3.21);

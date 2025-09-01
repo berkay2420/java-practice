@@ -1,0 +1,5 @@
+package JavaPolymorphism;
+
+abstract class Animal {
+    abstract void speak();
+}

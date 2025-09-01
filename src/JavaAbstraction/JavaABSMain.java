@@ -9,6 +9,11 @@ public class JavaABSMain {
         Shape newCircle = new Circle(3);
         Shape newRectangle = new Rectangle(10,20);
         Shape newTriangle = new Triangle(3,10);
+        //This is called polymorphism
+        //is useful when trying to create a array of objects
+        //We can create an array of shapes and add all these objects to the array
+        //Shape[] shape = {newCircle, newRectangle, newTriangle);
+        //This works in interfaces also
 
         newCircle.display();
         System.out.println(newCircle.area());
